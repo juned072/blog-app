@@ -35,7 +35,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div onClick={() => setIsOpen(!isOpen)} className="md:hidden">
-          <button className="text-gray-800 focus:outline-none">
+          <button className="text-white focus:outline-none">
             <svg
               className="w-6 h-6"
               fill="none"
@@ -54,7 +54,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className={`${isOpen ? "" : "hidden"}`}>
-        <ul className="flex flex-col items-center space-y-4">
+        <ul className="flex flex-col items-center space-y-4 p-4">
           <Link
             to="/"
             className="text-white hover:text-gray-400 transition duration-300"
