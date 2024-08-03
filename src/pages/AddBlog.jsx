@@ -39,73 +39,75 @@ const AddBlog = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-[#16161a] text-white p-4">
-      <div className="bg-gray-800 p-8 rounded-lg shadow-lg max-w-xl w-full">
-        <h2 className="text-2xl font-bold mb-6 text-center">Add New Blog</h2>
-        <form onSubmit={handleSubmit}>
-          <div className="mb-4">
-            <label className="block text-sm font-medium mb-1">Title</label>
-            <input
-              type="text"
-              name="title"
-              value={formData.title}
-              onChange={handleChange}
-              className="w-full px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:border-indigo-500"
-              required
-            />
-          </div>
-          <div className="mb-4">
-            <label className="block text-sm font-medium mb-1">Author</label>
-            <input
-              type="text"
-              name="author"
-              value={formData.author}
-              onChange={handleChange}
-              className="w-full px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:border-indigo-500"
-              required
-            />
-          </div>
-          <div className="mb-4">
-            <label className="block text-sm font-medium mb-1">
-              Publication Date
-            </label>
-            <input
-              type="date"
-              name="date"
-              value={formData.date}
-              onChange={handleChange}
-              className="w-full px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:border-indigo-500"
-              required
-            />
-          </div>
-          <div className="mb-4">
-            <label className="block text-sm font-medium mb-1">
-              Description
-            </label>
-            <textarea
-              name="description"
-              value={formData.description}
-              onChange={handleChange}
-              className="w-full px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:border-indigo-500"
-              required
-            ></textarea>
-          </div>
-          <div className="mb-4">
-            <label className="block text-sm font-medium mb-1">Image</label>
-            <input
-              type="file"
-              accept="image/*"
-              onChange={handleImageChange}
-              className="w-full px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:border-indigo-500"
-            />
-          </div>
-          <button
-            type="submit"
-            className="w-full px-4 py-2 mt-4 bg-indigo-600 hover:bg-indigo-700 rounded-lg font-semibold text-white"
-          >
-            Submit
-          </button>
-        </form>
+    <div className="p-4">
+      <h2 className="text-2xl font-bold mb-6 text-center p-4">Add New Blog</h2>
+      <div className="flex justify-center items-center bg-[#16161a] text-white ">
+        <div className="bg-gray-800 p-8 rounded-lg shadow-lg max-w-xl w-full">
+          <form onSubmit={handleSubmit}>
+            <div className="mb-4">
+              <label className="block text-sm font-medium mb-1">Title</label>
+              <input
+                type="text"
+                name="title"
+                value={formData.title}
+                onChange={handleChange}
+                className="w-full px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:border-indigo-500"
+                required
+              />
+            </div>
+            <div className="mb-4">
+              <label className="block text-sm font-medium mb-1">Author</label>
+              <input
+                type="text"
+                name="author"
+                value={formData.author}
+                onChange={handleChange}
+                className="w-full px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:border-indigo-500"
+                required
+              />
+            </div>
+            <div className="mb-4">
+              <label className="block text-sm font-medium mb-1">
+                Publication Date
+              </label>
+              <input
+                type="date"
+                name="date"
+                value={formData.date}
+                onChange={handleChange}
+                className="w-full px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:border-indigo-500"
+                required
+              />
+            </div>
+            <div className="mb-4">
+              <label className="block text-sm font-medium mb-1">
+                Description
+              </label>
+              <textarea
+                name="description"
+                value={formData.description}
+                onChange={handleChange}
+                className="w-full px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:border-indigo-500"
+                required
+              ></textarea>
+            </div>
+            <div className="mb-4">
+              <label className="block text-sm font-medium mb-1">Image</label>
+              <input
+                type="file"
+                accept="image/*"
+                onChange={handleImageChange}
+                className="w-full px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:border-indigo-500"
+              />
+            </div>
+            <button
+              type="submit"
+              className="w-full px-4 py-2 mt-4 bg-indigo-600 hover:bg-indigo-700 rounded-lg font-semibold text-white"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   );
