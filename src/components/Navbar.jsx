@@ -5,29 +5,31 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-md">
+    <nav className="bg-gray-800 shadow-md">
       <div className="container mx-auto flex justify-between items-center p-5">
         <div>
           <Link to="/">
-            <h2 className="text-xl font-bold text-gray-800">Blogging</h2>
+            <h2 className="text-xl font-bold text-white hover:text-gray-400">
+              Blogging
+            </h2>
           </Link>
         </div>
         <div className="hidden md:flex items-center space-x-6">
           <Link
             to="/"
-            className="text-gray-800 hover:text-gray-600 transition duration-300"
+            className="text-white hover:text-gray-400 transition duration-300"
           >
             Home
           </Link>
           <Link
             to="/blog"
-            className="text-gray-800 hover:text-gray-600 transition duration-300"
+            className="text-white hover:text-gray-400 transition duration-300"
           >
             Blog
           </Link>
           <Link
             to="/addblog"
-            className="text-gray-800 hover:text-gray-600 transition duration-300"
+            className="text-white hover:text-gray-400 transition duration-300"
           >
             Add Blog
           </Link>
@@ -55,19 +57,19 @@ const Navbar = () => {
         <ul className="flex flex-col items-center space-y-4">
           <Link
             to="/"
-            className="text-gray-800 hover:text-gray-600 transition duration-300"
+            className="text-white hover:text-gray-400 transition duration-300"
           >
             Home
           </Link>
           <Link
             to="/blog"
-            className="text-gray-800 hover:text-gray-600 transition duration-300"
+            className="text-white hover:text-gray-400 transition duration-300"
           >
             Blog
           </Link>
           <Link
             to="/addblog"
-            className="text-gray-800 hover:text-gray-600 transition duration-300"
+            className="text-white hover:text-gray-400 transition duration-300"
           >
             Add Blog
           </Link>
