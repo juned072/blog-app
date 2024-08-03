@@ -2,10 +2,13 @@ import React, { useContext } from "react";
 import BlogCard from "./BlogCard";
 import BlogContext from "../context/BlogContext";
 
-const BlogListing = () => {
+const BlogListing = ({ isHome }) => {
   const { blogs } = useContext(BlogContext);
   return (
     <div className="p-4">
+      <h2 className="text-center font-bold text-2xl text-gray-200">
+        {isHome ? "Latest Blog" : "All Blog"}
+      </h2>
       {blogs.map((blog, index) => (
         <BlogCard key={index} blog={blog} />
       ))}

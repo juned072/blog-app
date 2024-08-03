@@ -4,7 +4,7 @@ import BlogListing from "../components/BlogListing";
 const Home = () => {
   return (
     <div className="p-4">
-      <BlogListing />
+      <BlogListing isHome={true} />
     </div>
   );
 };
