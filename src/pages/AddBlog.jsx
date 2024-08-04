@@ -39,10 +39,10 @@ const AddBlog = () => {
   };
 
   return (
-    <div className="p-4">
+    <div className="bg-[#16161a] text-white p-4">
       <h2 className="text-2xl font-bold mb-6 text-center p-4">Add New Blog</h2>
-      <div className="flex justify-center items-center bg-[#16161a] text-white ">
-        <div className="bg-gray-800 p-8 rounded-lg shadow-lg max-w-xl w-full">
+      <div className="flex justify-center items-center">
+        <div className="bg-gray-800 rounded-lg shadow-lg max-w-screen-md mx-auto px-8 py-6 pb-8 w-full">
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
               <label className="block text-sm font-medium mb-1">Title</label>
