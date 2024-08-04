@@ -7,6 +7,7 @@ import Blog from "./pages/Blog";
 import AddBlog from "./pages/AddBlog";
 import { BlogProvider } from "./context/BlogContext";
 import ErrorPage from "./pages/ErrorPage";
+import ContactUs from "./pages/ContactUs";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
               <Route path="/" element={<Home />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/addblog" element={<AddBlog />} />
+              <Route path="/contactUs" element={<ContactUs />} />
               <Route path="*" element={<ErrorPage />} />
             </Routes>
           </div>
