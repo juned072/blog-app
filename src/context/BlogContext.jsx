@@ -12,12 +12,18 @@ export const BlogProvider = ({ children }) => {
     setBlogs((prevBlogs) => [...prevBlogs, blog]);
   };
 
+  const handleDeleteBlog = (blogId) => {
+    const updatedBlogs = blogs.filter((blog) => blog.id !== blogId);
+    setBlogs(updatedBlogs);
+    localStorage.setItem("blogs", JSON.stringify(updatedBlogs));
+  };
+
   useEffect(() => {
     localStorage.setItem("blogs", JSON.stringify(blogs));
   }, [blogs]);
 
   return (
-    <BlogContext.Provider value={{ blogs, addBlog }}>
+    <BlogContext.Provider value={{ blogs, addBlog, handleDeleteBlog }}>
       {children}
     </BlogContext.Provider>
   );
