@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import BlogContext from "../context/BlogContext";
 import { IoMdMore } from "react-icons/io";
+import { MdHome } from "react-icons/md";
 
 const BlogDetail = () => {
   const { id } = useParams();
@@ -15,7 +16,12 @@ const BlogDetail = () => {
   return (
     <div className="max-w-screen-lg  mx-auto p-8">
       <div className="mb-8 flex justify-between items-center">
-        <span className="">/Home</span>
+        <Link to={"/"}>
+          <span className="flex items-center">
+            <MdHome className="text-xl" />
+            <span className="ml-1">Home</span>
+          </span>
+        </Link>
         <span className="text-gray-100 text-2xl cursor-pointer">
           <IoMdMore />
         </span>
