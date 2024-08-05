@@ -1,5 +1,6 @@
 import React, { useState, useContext } from "react";
 import BlogContext from "../context/BlogContext";
+import { useNavigate } from "react-router-dom";
 
 const AddBlog = () => {
   const { addBlog } = useContext(BlogContext);
@@ -11,6 +12,8 @@ const AddBlog = () => {
     image: null,
     imageURL: "",
   });
+
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -36,6 +39,7 @@ const AddBlog = () => {
       image: null,
       imageURL: "",
     });
+    navigate("/blog");
   };
 
   return (
