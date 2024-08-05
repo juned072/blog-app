@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const BlogCard = ({ blog }) => {
   return (
@@ -25,12 +26,11 @@ const BlogCard = ({ blog }) => {
             </span>
           </div>
           <div className="mt-4">
-            <a
-              href=""
-              className="text-indigo-500 hover:text-indigo-700 font-semibold"
-            >
-              Read More
-            </a>
+            <Link to={`/blog/${blog.id}`}>
+              <span className="text-indigo-500 hover:text-indigo-700 font-semibold">
+                Read More
+              </span>
+            </Link>
           </div>
         </div>
       </div>

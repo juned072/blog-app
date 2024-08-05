@@ -30,7 +30,11 @@ const AddBlog = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    addBlog(formData);
+    const blogWithId = {
+      ...formData,
+      id: Math.floor(Math.random() * 10000).toString(),
+    };
+    addBlog(blogWithId);
     setFormData({
       title: "",
       author: "",
