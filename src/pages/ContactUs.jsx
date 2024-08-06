@@ -26,7 +26,9 @@ const ContactUs = () => {
 
   return (
     <div className="max-w-screen-md mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-6 text-center p-4">Contact Us</h1>
+      <h1 className="text-center font-bold text-2xl text-gray-200 my-6">
+        Contact Us
+      </h1>
       <form
         onSubmit={handleSubmit}
         className="bg-gray-800 shadow-md rounded px-8 pt-6 pb-8 mb-4"

@@ -48,7 +48,9 @@ const AddBlog = () => {
 
   return (
     <div className="bg-[#16161a] text-white p-4">
-      <h2 className="text-2xl font-bold mb-6 text-center p-4">Add New Blog</h2>
+      <h2 className="text-center font-bold text-2xl text-gray-200 my-6">
+        Add New Blog
+      </h2>
       <div className="flex justify-center items-center">
         <div className="bg-gray-800 rounded-lg shadow-lg max-w-screen-md mx-auto px-8 py-6 pb-8 w-full">
           <form onSubmit={handleSubmit}>
