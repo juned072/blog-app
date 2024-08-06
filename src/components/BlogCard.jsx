@@ -16,7 +16,9 @@ const BlogCard = ({ blog }) => {
         <h2 className="block mt-1 text-lg leading-tight font-medium text-gray-200 hover:underline">
           {blog.title}
         </h2>
-        <p className="mt-2 text-gray-400">{blog.description}</p>
+        <p className="mt-2 text-gray-400">
+          {blog.description.slice(0, 100)}...
+        </p>
         <div className="mt-4">
           <span className="text-gray-500 text-sm">
             Published on {blog.date}
